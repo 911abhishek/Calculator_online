@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>calculator by abhishek</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="utils.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<h1><b></b><center>welcome to CALCI 911!</center></b></h1>
+<div class="container">
+  <div class="row">
+    <form>
+    <center>
+      
+      
+      <table border="1">
+     <tbody>
+       <tr>
+         <th colspan=4><input type="text" name="display"></th>
+       </tr>
+      <tr>
+        <th><input type="button" value="AC" onclick="display.value =''" class="operator"></th>
+        <th><input type="button" value="DEL"onclick="display.value =display.value.toString().slice(0,-1)" class="operator"></th>
+    <th> <input type="button" value="." onclick="display.value += '.'"  class="operator" ></th>
+    <th> <input type="button" value="/" onclick="display.value += '/'"  class="operator"></th>
+          
+      </tr>
+       <tr>
+        <th><input type="button" value="7"onclick="display.value +='7'"</th>
+        <th><input type="button" value="8" onclick="display.value +='8'"></th>
+    <th> <input type="button" value="9" onclick="display.value +='9'"></th>
+    <th> <input type="button" value="*" onclick="display.value +='*' "class="operator"></th>
+          
+    
+      </tr>
+      <tr>
+        <th><input type="button" value="4" onclick="display.value +='4'"></th>
+        <th><input type="button" value="5" onclick="display.value +='5'"></th>
+    <th> <input type="button" value="6" onclick="display.value +='6'"></th>
+    <th> <input type="button" value="-" onclick="display.value +='-'"class="operator"></th>
+          
+      </tr>
+       <tr>
+        <th><input type="button" value="1" onclick="display.value +='1'"></th>
+        <th><input type="button" value="2" onclick="display.value +='2'"></th>
+    <th> <input type="button" value="3" onclick="display.value +='3'"></th>
+    <th> <input type="button" value="+" onclick="display.value +='+'"class="operator"></th>
+          
+      </tr>
+            <tr>
+        <th><input type="button" value="00" onclick="display.value +='00'"></th>
+        <th><input type="button" value="0" onclick="display.value +='0'"></th>
+    <th colspan="2"> <input type="button" value="=" class="equal" onclick="display.value = eval(display.value)"></th>
+    
+          
+      </tr>
+       
+     </tbody>
+   </table>
+      </center>
+  </form>
+  </div>
+</div>
+</body>
+
+</html>
